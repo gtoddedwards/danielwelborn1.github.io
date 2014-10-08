@@ -1,5 +1,5 @@
 *{
-background-color:#0da1db;
+background-color:#111111;
 font-family: "Shadows Into Light", cursive;
 }
 #headerTag{
@@ -16,7 +16,7 @@ text-align:center;
 position: absolute;
 height:50px;
 
-background-color:#0da1db;
+background-color:#111111;
 }
 #buttonfb{
 position:relative;
@@ -28,7 +28,7 @@ padding-top:5px;
 padding-bottom:5px;
 width: 100%;
 
-background-color:#111111;
+background-color:#0da1db;
 }
 #footer{
 position: relative;
