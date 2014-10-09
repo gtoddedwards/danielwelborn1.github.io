@@ -35,7 +35,11 @@ height:50px;
 background-color:#000000;
 }
 #game{
+clear:both;
 position:absolute;
-padding-left:600px;
+padding-left:601px;
 
+}
+#feed{
+position: relative;
 }
