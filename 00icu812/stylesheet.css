@@ -25,7 +25,7 @@ position: relative;
 padding-top:5px;
 padding-bottom:5px;
 width: 100%;
-
+float:right;
 background-color:#111111;
 }
 #footer{
@@ -36,6 +36,6 @@ background-color:#000000;
 }
 
 #feed{
-float:right;
+
 position: relative;
 }
