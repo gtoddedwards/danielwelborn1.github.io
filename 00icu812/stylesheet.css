@@ -34,12 +34,8 @@ width:100%;
 height:50px;
 background-color:#000000;
 }
-#game{
 
-position:relative;
-padding-left:601px;
-
-}
 #feed{
+float:right;
 position: relative;
 }
