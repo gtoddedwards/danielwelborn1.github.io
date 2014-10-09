@@ -53,6 +53,23 @@ $app->run();
 								  ga('send', 'pageview');
 
 							</script>	
+							<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1544289682449797',
+      xfbml      : true,
+      version    : 'v2.1'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
         <header id="headerTag">
         
         <!-- Start css3menu.com BODY section -->
@@ -99,6 +116,12 @@ $app->run();
 		 
 		 
 		</div>
+		<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 		
 
             
