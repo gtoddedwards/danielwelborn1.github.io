@@ -35,8 +35,8 @@ height:50px;
 background-color:#000000;
 }
 #game{
-clear:both;
-position:absolute;
+
+position:relative;
 padding-left:601px;
 
 }
