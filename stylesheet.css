@@ -3,7 +3,7 @@ background-color:#111111;
 font-family: "Shadows Into Light", cursive;
 }
 #headerTag{
-	padding-bottom:5px;
+	padding-bottom:50px;
 	width:100%;
 }
 #wrapper{
@@ -37,7 +37,7 @@ padding-left:360px;
 #game{
 float:top;
 position:absolute;
-padding-top:100px;
+padding-top:50px;
 }
 .fb-login-button{
 position:relative;
@@ -45,7 +45,7 @@ padding-left:50%;
 
 }
 .fb-comments{
-padding-top:100px;
+padding-top:50px;
 float:right;
 
 
