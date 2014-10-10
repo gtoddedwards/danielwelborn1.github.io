@@ -41,6 +41,7 @@ position: absolute;
 padding:6px;
 }
 #game{
+position: relative;
 padding-left:6px;
 
 
