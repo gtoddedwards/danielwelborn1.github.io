@@ -40,8 +40,8 @@ div#ceiling {
 
 #screen {
  position : relative;
- width : 760px;
- height : 600px;
+ width : 1350px;
+ height : 650px;
  border : 1px solid black;
  overflow : hidden;
 }
@@ -83,13 +83,7 @@ position:absolute;
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-<div id="buttonfb"
-						 class="fb-like"
-						 data-share="true"
-						 data-width="220"
-						 data-show-faces="true"
-						 data-colorscheme="dark">
-					</div>
+
 <div id= "mapsection">
 
 <div id="minimapcontainer">
@@ -157,8 +151,8 @@ var mapHeight = 0;
 
 var miniMapScale = 8;
 
-var screenWidth = 760;
-var screenHeight = 600;
+var screenWidth = 1350;
+var screenHeight = 650;
 
 var stripWidth = 2;
 var fov = 60 * Math.PI / 180;
@@ -225,19 +219,19 @@ function bindKeys() {
 		switch (e.keyCode) { // which key was pressed?
 
 			case 87: // up, move player forward, ie. increase speed
-				player.speed = 4;
+				player.speed = 9;
 				break;
 
 			case 83: // down, move player backward, set negative speed
-				player.speed = -4;
+				player.speed = -9;
 				break;
 
 			case 65: // left, rotate player left
-				player.dir = -2.5;
+				player.dir = -4;
 				break;
 
 			case 68: // right, rotate player right
-				player.dir = 2.5;
+				player.dir = 4;
 				break;
 		}
 	}
