@@ -3,11 +3,8 @@ background-color:#111111;
 font-family: "Shadows Into Light", cursive;
 }
 #headerTag{
-	position:relative;
-	padding-left:20px;
-	padding-bottom:0px;
+	padding-bottom:5px;
 	width:100%;
-	
 }
 #wrapper{
 padding:50px;
