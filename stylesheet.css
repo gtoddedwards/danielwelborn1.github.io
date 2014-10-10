@@ -39,6 +39,9 @@ float:top;
 position:absolute;
 padding-top:50px;
 }
+#feed{
+position:relative;
+}
 .fb-login-button{
 position:relative;
 padding-left:50%;
