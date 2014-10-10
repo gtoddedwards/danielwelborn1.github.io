@@ -7,7 +7,7 @@ font-family: "Shadows Into Light", cursive;
 	padding-left:20px;
 	padding-bottom:0px;
 	width:100%;
-	float:right;
+	
 }
 #wrapper{
 padding:50px;
@@ -33,12 +33,13 @@ background-color:#111111;
 #menu{
 position:relative;
 padding-left:30px;
+float:right;
 
 
 }
 .fb-login-button{
 
-
+float:right;
 
 
 
