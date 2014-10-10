@@ -37,7 +37,7 @@ padding-left:360px;
 #game{
 float:top;
 position:absolute;
-padding:2px;
+padding-top:100px;
 }
 .fb-login-button{
 position:relative;
@@ -45,6 +45,7 @@ padding-left:50%;
 
 }
 .fb-comments{
+padding-top:100px;
 float:right;
 
 
