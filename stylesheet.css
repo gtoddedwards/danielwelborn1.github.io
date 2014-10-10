@@ -7,6 +7,7 @@ font-family: "Shadows Into Light", cursive;
 	padding-left:20px;
 	padding-bottom:0px;
 	width:100%;
+	float:right;
 }
 #wrapper{
 padding:50px;
