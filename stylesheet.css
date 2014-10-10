@@ -10,7 +10,6 @@ font-family: "Shadows Into Light", cursive;
 }
 #wrapper{
 padding:50px;
-text-align:center;
 }
 #logo{
 position: absolute;
@@ -23,19 +22,24 @@ position:relative;
 padding-left:0px;
 }
 #block{
-position: relative;
+position: absolute;
 padding-top:5px;
 padding-bottom:5px;
 width: 100%;
-
-background-color:#0da1db;
+float:right;
+background-color:#111111;
 }
+
+
+
+
 #footer{
 position: relative;
 width:100%;
-height:200px;
+height:50px;
 background-color:#000000;
 }
+
 #menu{
 position:relative;
 padding-left:200px;
@@ -51,7 +55,7 @@ padding-left:0px;
 
 }
 .fb-comments{
-
+float:right;
 position:relative;
 
 }
