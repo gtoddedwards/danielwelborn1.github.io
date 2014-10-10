@@ -11,7 +11,7 @@ padding:50px;
 }
 #logo{
 width:100%;
-position:relative;
+position:absolute;
 height:50px;
 background-color:#111111;
 }
@@ -20,7 +20,7 @@ position:relative;
 padding-left:0px;
 }
 #block{
-position: absolute;
+position: center-left;
 padding-top:5px;
 padding-bottom:5px;
 width: 100%;
@@ -36,6 +36,7 @@ padding-left:360px;
 }
 .fb-login-button{
 position:relative;
+padding-left:50%;
 
 }
 .fb-comments{
