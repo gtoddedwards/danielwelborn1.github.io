@@ -12,9 +12,8 @@ font-family: "Shadows Into Light", cursive;
 padding:50px;
 }
 #logo{
-position: absolute;
+position: center;
 height:50px;
-
 background-color:#111111;
 }
 #buttonfb{
@@ -32,14 +31,13 @@ background-color:#111111;
 
 #menu{
 position:relative;
-padding-left:360px;
+padding-left:30px;
 
 
 }
 .fb-login-button{
 
-position:relative;
-padding-left:400px;
+
 
 
 
