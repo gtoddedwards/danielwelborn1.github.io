@@ -39,19 +39,19 @@
 					{ sprite: 'c', time: 0.01 },
                    
             ], sprites);
-            var kunioImage = new Image();
+            var Image = new Image();
  
-            kunioImage.onload = function() {
+            Image.onload = function() {
                 setInterval(function(){
                     walk.animate(timer.getSeconds());
                     var frame = walk.getSprite();
                     ctx.clearRect(0, 0, 300, 300);
-                    ctx.drawImage(kunioImage, frame.x, frame.y, 44, 44, 0, 0, 44, 44);
+                    ctx.drawImage(Image, frame.x, frame.y, 44, 44, 0, 0, 44, 44);
                     timer.tick();
                 }, 5);
             };
  
-            kunioImage.src = 'b/img/back_eye.gif';
+            Image.src = 'b/img/back_eye.gif';
         };
     </script>
 </head>
