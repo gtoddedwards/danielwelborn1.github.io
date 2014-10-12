@@ -1,8 +1,0 @@
-Parent pages include:
-	* Title, Menu, Search
-	
-	* Self/Child Info Space, Video Cast Box / PIP Cam Box
-	
-	* Framework
-	
-	*
