@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<META NAME="description" CONTENT="GAME CLOUD-PLAY FOR FREE ONLINE GAMES GET READY BECAUSE THIS IS GOING TO BE BIG!">
-<META NAME="keywords" CONTENT="gamecloud,GAMECLOUD,GameCloud,games,free,freegames,socialgames,fungames,fun,online,cloud,cloudgames,">
-<META NAME="robot" CONTENT="index,follow">
-<META NAME="copyright" CONTENT="Copyright © 2014 GAMECLOUD.LINK. All Rights Reserved.">
-<META NAME="author" CONTENT="">
-<META NAME="generator" CONTENT="www.onlinemetatag.com">
-<META NAME="revisit-after" CONTENT="0.01">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title></title>
 	<link rel="stylesheet" type="text/css" href="b/bam.css" />
     <script type="text/javascript" src="b/js/FrameTimer.js"></script>
@@ -47,19 +39,19 @@
 					{ sprite: 'c', time: 0.01 },
                    
             ], sprites);
-            var Image = new Image();
+            var kunioImage = new Image();
  
-            Image.onload = function() {
+            kunioImage.onload = function() {
                 setInterval(function(){
                     walk.animate(timer.getSeconds());
                     var frame = walk.getSprite();
                     ctx.clearRect(0, 0, 300, 300);
-                    ctx.drawImage(Image, frame.x, frame.y, 44, 44, 0, 0, 44, 44);
+                    ctx.drawImage(kunioImage, frame.x, frame.y, 44, 44, 0, 0, 44, 44);
                     timer.tick();
                 }, 5);
             };
  
-            Image.src = 'b/img/back_eye.gif';
+            kunioImage.src = 'b/img/back_eye.gif';
         };
     </script>
 </head>
