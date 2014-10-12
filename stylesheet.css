@@ -35,9 +35,10 @@ padding-left:360px;
 
 }
 #ad{
-position:relative;
+position:absolute;
+float:top-right;
 
-padding-top:26px;
+padding-left:666px;
 }
 #game{
 float:top;
