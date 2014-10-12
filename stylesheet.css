@@ -34,6 +34,10 @@ padding-left:360px;
 
 
 }
+#ad{
+float:right;
+padding-left:6px;
+}
 #game{
 float:top;
 position:absolute;
