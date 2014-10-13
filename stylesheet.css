@@ -55,11 +55,12 @@ padding-top:5px;
 
 .fb-login-button{
 position:relative;
-padding-left:50%;
+
 
 }
 .fb-comments{
 padding-top:25px;
+padding-right:15px;
 float:right;
 position:relative;
 
