@@ -46,6 +46,7 @@ background-color:#002433;
 
 
 
+
 #game{
 float:top;
 position:absolute;
@@ -57,7 +58,7 @@ position:relative;
 padding-left:50%;
 
 }
-.fb-comments{
+#comments{
 padding-top:125px;
 float:right;
 position:relative;
