@@ -22,6 +22,7 @@ padding-left:20%;
 
 }
 #ad{
+position:absolute;
 float:right;
 }
 #wrapper{
@@ -57,9 +58,8 @@ padding-left:50%;
 }
 .fb-comments{
 padding-top:75px;
-padding-left:75%;
 float:right;
-position:absolute;
+position:relative;
 
 
 }
