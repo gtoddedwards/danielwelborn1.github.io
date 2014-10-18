@@ -4,17 +4,16 @@
     <div id="game"></div>
 		<script type="text/javascript" src="https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"></script>
 				<script>
-					Crafty.init(800,350, document.getElementById('game'));
+					Crafty.init(800,850, document.getElementById('game'));
+					Crafty.background('#FFFFFF url(cirsp10.png) repeat center center');
 					
-					var ent = Crafty.e("2D, DOM, Image").image("cirsp10.png");
+					
 				 
-				    Crafty.e('Floor, 2D, Canvas, Color')
-					  .attr({x: 0, y: 250, w: 800, h: 10})
-					  .color('green');
+				   
 			  
-				    Crafty.e('2D, DOM, Color, Fourway, Gravity').attr({x: 0, y: 0, w: 100, h: 100}).color('#F00')
+				    Crafty.e('2D, DOM, Color, Fourway').attr({x: 0, y: 70, w: 10, h: 10}).color('#F00')
 					  .fourway(4)
-					  .gravity('Floor');
+					  
 				  
 				</script>
   </body>
