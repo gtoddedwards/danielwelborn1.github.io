@@ -5,6 +5,8 @@
 		<script type="text/javascript" src="https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"></script>
 				<script>
 					Crafty.init(800,350, document.getElementById('game'));
+					
+					var ent = Crafty.e("2D, DOM, Image").image("cirsp10.png");
 				 
 				    Crafty.e('Floor, 2D, Canvas, Color')
 					  .attr({x: 0, y: 250, w: 800, h: 10})
