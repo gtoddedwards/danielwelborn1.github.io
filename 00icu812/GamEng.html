@@ -7,6 +7,8 @@
 				
 					Crafty.init(420,315, document.getElementById('game'));
 					
+					var ent = Crafty.e("2D, DOM, Image").image("./img/cirsp10.png");
+					
 					var bg = Crafty.e("2D, DOM, Image")
 						 .attr({w: Crafty.viewport.width, h: Crafty.viewport.height})
 						 .image("./img/cirsp10.png", "repeat");
