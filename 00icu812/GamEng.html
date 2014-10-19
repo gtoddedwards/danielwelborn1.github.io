@@ -18,11 +18,19 @@
 					  .color('green');
 					  
 					  
+					
+					  
+					  
 				  
 			  
 				    Crafty.e('2D, DOM, Color, Fourway').attr({x: 0, y: 70, w: 5, h: 5}).color('#F00')
 					  .fourway(4)
-					  
+					
+					
+					Crafty.e("2D, Collision, Color").collision(
+						new Crafty.polygon([50,0], [100,100], [0,100]).color('red'));
+
+					Crafty.e("2D, Collision").collision([50,0], [100,100], [0,100]);  
 				  
 				</script>
 			
