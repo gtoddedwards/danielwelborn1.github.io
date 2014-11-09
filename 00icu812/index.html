@@ -1,71 +1,44 @@
-<!DOCTYPE html>
-<head>
-	<title>GAME</title>
-	<link rel="stylesheet" type="text/css" href="b/bam.css" />
-    <script type="text/javascript" src="b/js/FrameTimer.js"></script>
-    <script type="text/javascript" src="b/js/SpriteSheet.js"></script>
-    <script type="text/javascript" src="b/js/Animation.js"></script>
-    <script type="text/javascript">
-	
-	
-        window.onload = function() {
-            var timer = new FrameTimer();
-            timer.tick();
- 
-            var sprites = new SpriteSheet({
-                width: 45.6,
-                height: 38,
-                sprites: [
-                    { name: 'a' },
-					{ name: 'b' },
-					{ name: 'c' },
-					{ name: 'd' },
-					{ name: 'e' },
-					
-                    
-                ]
-            });
-            var ctx = document.getElementById('canvas').getContext('2d');
-            var walk = new Animation([
-                    { sprite: 'a', time: 0.03 },
-                    { sprite: 'b', time: 0.05 },
-                    { sprite: 'c', time: 0.1 },
-					{ sprite: 'd', time: 0.04 },
-					{ sprite: 'c', time: 0.07 },
-					{ sprite: 'a', time: 0.03 },
-					{ sprite: 'b', time: 0.07 },
-					{ sprite: 'a', time: 0.05 },
-					{ sprite: 'c', time: 0.01 },
-                   
-            ], sprites);
-            var kunioImage = new Image();
- 
-            kunioImage.onload = function() {
-                setInterval(function(){
-                    walk.animate(timer.getSeconds());
-                    var frame = walk.getSprite();
-                    ctx.clearRect(0, 0, 300, 300);
-                    ctx.drawImage(kunioImage, frame.x, frame.y, 44, 44, 0, 0, 44, 44);
-                    timer.tick();
-                }, 5);
-            };
- 
-            kunioImage.src = 'b/img/back_eye.gif';
-        };
-    </script>
-</head>
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'BrickBreaker.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iQnJpY2tCcmVha2VyLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPkJyaWNrQnJlYWtlcjwvdGl0bGU+DQogICAgPHZlbmRvcj5PcmFjbGU8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGpmeDpqYXZhZngtcnVudGltZSB2ZXJzaW9uPSIyLjIrIiBocmVmPSJodHRwOi8vamF2YWRsLnN1bi5jb20vd2ViYXBwcy9kb3dubG9hZC9HZXRGaWxlL2phdmFmeC1sYXRlc3Qvd2luZG93cy1pNTg2L2phdmFmeDIuam5scCIvPg0KICA8L3Jlc291cmNlcz4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJCcmlja0JyZWFrZXIuamFyIiBzaXplPSI3Mjg0NDEiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxhcHBsZXQtZGVzYyAgd2lkdGg9Ijk1MCIgaGVpZ2h0PSI3MDAiIG1haW4tY2xhc3M9ImNvbS5qYXZhZngubWFpbi5Ob0phdmFGWEZhbGxiYWNrIiAgbmFtZT0iQnJpY2tCcmVha2VyIiA+DQogICAgPHBhcmFtIG5hbWU9InJlcXVpcmVkRlhWZXJzaW9uIiB2YWx1ZT0iMi4yKyIvPg0KICA8L2FwcGxldC1kZXNjPg0KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iOTUwIiBoZWlnaHQ9IjcwMCIgbWFpbi1jbGFzcz0iYnJpY2ticmVha2VyLk1haW4iICBuYW1lPSJCcmlja0JyZWFrZXIiIC8+DQogIDx1cGRhdGUgY2hlY2s9ImJhY2tncm91bmQiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '2.2+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
 
+<script>
+    function javafxEmbed() {
+        dtjava.embed(
+            {
+                url : 'BrickBreaker.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : 950,
+                height : 700,
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iQnJpY2tCcmVha2VyLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPkJyaWNrQnJlYWtlcjwvdGl0bGU+DQogICAgPHZlbmRvcj5PcmFjbGU8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGpmeDpqYXZhZngtcnVudGltZSB2ZXJzaW9uPSIyLjIrIiBocmVmPSJodHRwOi8vamF2YWRsLnN1bi5jb20vd2ViYXBwcy9kb3dubG9hZC9HZXRGaWxlL2phdmFmeC1sYXRlc3Qvd2luZG93cy1pNTg2L2phdmFmeDIuam5scCIvPg0KICA8L3Jlc291cmNlcz4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJCcmlja0JyZWFrZXIuamFyIiBzaXplPSI3Mjg0NDEiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxhcHBsZXQtZGVzYyAgd2lkdGg9Ijk1MCIgaGVpZ2h0PSI3MDAiIG1haW4tY2xhc3M9ImNvbS5qYXZhZngubWFpbi5Ob0phdmFGWEZhbGxiYWNrIiAgbmFtZT0iQnJpY2tCcmVha2VyIiA+DQogICAgPHBhcmFtIG5hbWU9InJlcXVpcmVkRlhWZXJzaW9uIiB2YWx1ZT0iMi4yKyIvPg0KICA8L2FwcGxldC1kZXNjPg0KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iOTUwIiBoZWlnaHQ9IjcwMCIgbWFpbi1jbGFzcz0iYnJpY2ticmVha2VyLk1haW4iICBuYW1lPSJCcmlja0JyZWFrZXIiIC8+DQogIDx1cGRhdGUgY2hlY2s9ImJhY2tncm91bmQiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '2.2+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbed);
+</script>
 
-<body>
-<header> </header>
+</head><body>
+<h2>Test page for <b>BrickBreaker</b></h2>
+  <b>Webstart:</b> <a href='BrickBreaker.jnlp' onclick="return launchApplication('BrickBreaker.jnlp');">click to launch this app as webstart</a><br><hr><br>
 
-<iframe src="https://serene-coast-3878.herokuapp.com/"></iframe>
-
-<body id="bod">
-
-<canvas id="canvas" width="100" height="50" ></canvas>
-
-</body>
-
-
-</html>
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
