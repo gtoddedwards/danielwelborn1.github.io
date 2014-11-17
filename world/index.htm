@@ -181,19 +181,19 @@ function bindKeys() {
 
 		switch (e.keyCode) { // which key was pressed?
 
-			case 38: // up, move player forward, ie. increase speed
+			case 87: // up, move player forward, ie. increase speed
 				player.speed = 1;
 				break;
 
-			case 40: // down, move player backward, set negative speed
+			case 83: // down, move player backward, set negative speed
 				player.speed = -1;
 				break;
 
-			case 37: // left, rotate player left
+			case 65: // left, rotate player left
 				player.dir = -1;
 				break;
 
-			case 39: // right, rotate player right
+			case 68: // right, rotate player right
 				player.dir = 1;
 				break;
 		}
@@ -203,12 +203,12 @@ function bindKeys() {
 		e = e || window.event;
 
 		switch (e.keyCode) {
-			case 38:
-			case 40:
+			case 87:
+			case 83:
 				player.speed = 0;	// stop the player movement when up/down key is released
 				break;
-			case 37:
-			case 39:
+			case 65:
+			case 68:
 				player.dir = 0;
 				break;
 		}
