@@ -31,7 +31,7 @@ div#floor {
  position : absolute;
  width : 100%;
  height : 100%;
- background-image: url("pixel-green.png");
+ background-image: url("images/metal.png");
  background-color : rgb(128,128,128);
 }
 
@@ -39,7 +39,7 @@ div#ceiling {
  position : absolute;
  width : 100%;
  height : 50%;
- background-image: url("blue-water.png");
+ background-image: url("images/blue-water.png");
  background-color : rgb(96,96,96);
 }
 
@@ -129,7 +129,7 @@ var viewDist = (screenWidth/2) / Math.tan((fov / 2));
 
 var twoPI = Math.PI * 2;
 
-var numTextures = 4;
+var numTextures = 6;
 
 function init() {
 
@@ -162,7 +162,7 @@ function initScreen() {
 		strip.style.backgroundColor = "magenta";
 
 		var img = new Image();
-		img.src = (window.opera ? "walls_19color.png" : "walls.png");
+		img.src = (window.opera ? "images/walls_19color.png" : "images/walls.png");
 		img.style.position = "absolute";
 		img.style.left = "0px";
 
