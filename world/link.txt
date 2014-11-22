@@ -1,6 +1,78 @@
-<iframe width="360" height="515" src="http://gamecloud.link/world/" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="515" src="http://gamecloud.link/logo/" frameborder="0" allowfullscreen></iframe>
 
 
 
-<iframe src="http://gamecloud.link/world/" style="border:2px #333333 solid;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="315px" width="760px"></iframe>
+<iframe src="http://gamecloud.link/world/" style="border:2px #333333 solid;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="515px" width="760px"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://i.imgur.com/c6cWrDb.gif
+
+
+
+https://31.media.tumblr.com/9244caf740b667b38fd2f4ccb0e5eeb3/tumblr_mtw7ep5jRG1rflfdno1_400.gif
+
+
+razer
+
+
+
+"Ahhh... I see the fuck-up fairy has visited us again.."
+"I don't know what your problem is, but I'll bet it's hard to pronounce."
+"How about never? Is never good for you?"
+"I see you've set aside this special time to humiliate yourself in public."
+"I'm really easy to get along with once you people learn to worship me."
+"I'll try being nicer if you'll try being smarter."
+"I'm out of my mind, but feel free to leave a message.."
+"I don't work here. I'm a consultant."
+"It sounds like English, but I can't understand a word you're saying."
+"I can see your point, but I still think you're full of shit."
+"I like you. You remind me of me when I was young and stupid."
+"You are validating my inherent mistrust of strangers."
+"I have plenty of talent and vision. I just don't give a damn."
+"I'm already visualizing the duct tape over your mouth."
+"I will always cherish the initial misconceptions I had about you."
+"Thank you. We're all refreshed and challenged by your unique point of view."
+"The fact that no one understands you doesn't mean you're an artist."
+"Any connection between your reality and mine is purely coincidental."
+"What am I? Flypaper for freaks!?"
+"I'm not being rude. You're just insignificant."
+"It's a thankless job, but I've got a lot of Karma to burn off."
+"Yes, I am an agent of Satan, but my duties are largely ceremonial."
+"No, my powers can only be used for good."
+"You sound reasonable... Time to up the medication."
+"Who me? I just wander from room to room."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
