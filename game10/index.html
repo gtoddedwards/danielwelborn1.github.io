@@ -16,53 +16,11 @@
 		<link rel="CONTENT" type="text/CONTENT" href="CONTENT.txt"/>
 </head>
 <body id="body">
-<header id="header">
-<h1 id="fb-welcome"></h1>
-</header>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1544289682449797',
-      xfbml      : true,
-      version    : 'v2.1'
-    });
-	function onLogin(response) {
-  if (response.status == 'connected') {
-    FB.api('/me?fields=first_name', function(data) {
-      var welcomeBlock = document.getElementById('fb-welcome');
-      welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '! Welcome to GAME 10.';
-    });
-  }
-}
 
-FB.getLoginStatus(function(response) {
-  // Check login status on load, and if the user is
-  // already logged in, go directly to the welcome message.
-  if (response.status == 'connected') {
-    onLogin(response);
-  } else {
-    // Otherwise, show Login dialog first.
-    FB.login(function(response) {
-      onLogin(response);
-    }, {scope: 'user_friends, email'});
-  }
-});
-
-    // ADD ADDITIONAL FACEBOOK CODE HERE
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+<iframe src="gamecloud.link/heroku/?" width="200" height="200"></iframe>
 
 
 
-<iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=httpgamecloli-20&o=1&p=26&l=ur1&category=game_downloads&banner=18F6QNRQ34899GR27S02&f=ifr&linkID=HR6ZEEMDDYM3E3WR" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 
 
 </body>
