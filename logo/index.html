@@ -22,9 +22,25 @@ div#minimapcontainer {
 }
 canvas#minimap {
  position : absolute;
+ 
 }
 canvas#minimapobjects {
  position : absolute;
+ 
+}
+div#adsec{
+	position: fixed;
+	top: 55px;
+	left: 25%;
+	
+}
+#mybtn{
+	position: fixed;
+	top:5px;
+	left:25%;
+}
+#demo{
+	color: #FFFFFF;
 }
 
 div#floor {
@@ -58,24 +74,41 @@ div#ceiling {
 
 </style>
 
+
 <script src="excanvas.js" type="text/javascript"></script>
 
 </head>
 <body id="body">
-<a href="http://send.onenetworkdirect.net/z/555257/CD187213/"><img src="http://show.onenetworkdirect.com/digitalriver/555257.gif?e=dxokbxrchhhbhk" alt="Razer Blade" border="0"></a>
+<div id="minimapcontainer">
+<canvas id="minimap"></canvas>
+<canvas id="minimapobjects"></canvas>
+</div>
+<div id ="adsec">
+<a href="http://click.linksynergy.com/fs-bin/click?id=/rdIaTCwViM&offerid=117947.10000017&subid=0&type=4"><IMG border="0"   alt="LinkShare UK Referral Program" src="http://ad.linksynergy.com/fs-bin/show?id=/rdIaTCwViM&bids=117947.10000017&subid=0&type=4&gridnum=11"></a>
+</div>
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+
+</body><script>
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+</script>
 <div id="section" action="contains">
 <div id="screen">
 <div id="floor"></div>
 <div id="ceiling"></div>
 </div>
 
-<div id="minimapcontainer">
-<canvas id="minimap"></canvas>
-<canvas id="minimapobjects"></canvas>
-</div>
+
 
 
 <script type="text/javascript">
+
 
 var $ = function(id) { return document.getElementById(id); };
 var dc = function(tag) { return document.createElement(tag); };
@@ -120,7 +153,7 @@ var player = {
 var mapWidth = 0;
 var mapHeight = 0;
 
-var miniMapScale = 8;
+var miniMapScale = 10;
 
 var screenWidth = 760;
 var screenHeight = 315;
@@ -136,6 +169,8 @@ var viewDist = (screenWidth/2) / Math.tan((fov / 2));
 var twoPI = Math.PI * 2;
 
 var numTextures = 12;
+
+var texObj=12;
 
 function init() {
 
@@ -523,23 +558,9 @@ tumblr.request(require('request'));
 module.exports = tumblr;
 
 </script>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="2YPPBBBFY64TW">
-<table>
-<tr><td><input type="hidden" name="on0" value="LEVEL UP T-BOT">LEVEL UP T-BOT</td></tr><tr><td><select name="os0">
-	<option value="LEVEL 5 CLASS">LEVEL 5 CLASS $5.00 USD</option>
-	<option value="LEVEL 10 CLASS">LEVEL 10 CLASS $7.00 USD</option>
-	<option value="LEVEL 20 CLASS">LEVEL 20 CLASS $10.00 USD</option>
-	<option value="COMMANDER">COMMANDER $20.00 USD</option>
-</select> </td></tr>
-<tr><td><input type="hidden" name="on1" value="UPGRADE YOUR T-BOT">UPGRADE YOUR T-BOT</td></tr>
-</table>
-<input type="hidden" name="currency_code" value="USD">
-<input type="image" src="http://gamecloud.link/logo/gold.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+
 </div>
+
 </body>
 
 
