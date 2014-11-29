@@ -91,13 +91,7 @@ div#ceiling {
 <p id="demo"></p>
 
 
-</body><script>
-document.getElementById("myBtn").addEventListener("click", displayDate);
-
-function displayDate() {
-    document.getElementById("demo").innerHTML = Date();
-}
-</script>
+</body>
 <div id="section" action="contains">
 <div id="screen">
 <div id="floor"></div>
@@ -550,6 +544,13 @@ function drawMiniMap() {
 
 	updateMiniMap();
 }
+
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+
 
 setTimeout(init, 1);
 var tumblr = require('./lib/tumblr');
