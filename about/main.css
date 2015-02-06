@@ -1,0 +1,120 @@
+*{
+	background-color:#000000;
+	
+	position:center;
+	float:left;
+	width:100%;
+	height:7px;
+	
+	
+}
+
+
+
+#body{
+	width:100%;
+	padding:0%;
+	right:0px;
+	
+}
+#header{
+	background-color:black;
+				/* border:#999 1px inset;
+				 */
+				 width:90% auto;
+				 height:100% auto;
+				 margin: 6px auto;
+				 font-family:"Shadows Into Light", cursive;
+				 padding: 2%;
+				
+				
+
+}
+#clockStyle{
+	color:blue;
+}
+				
+
+#left-pane-set {
+	display:block;
+	position:absolute;
+	float:left;
+	width:16%;
+	height:75%;
+	background-image:url();
+	padding:1px;
+	top:60px;
+	
+}
+#right-pane-set {
+	display:block;
+	width:16%;
+	height:75%;
+	position:absolute;
+	float:right;
+	left:79%;
+	padding:1px;
+	top:60px;
+	
+	background-color:#00ff00;
+
+}
+#center-pane-set {
+	display:block;
+	width:39%;
+	height:25%;
+	position:absolute;
+	float:left;
+	left:29%;
+	background-color:#0000ff;
+	padding:1%;
+	top:60px;
+
+}
+#center-pane-set2 {
+	display:block;
+	width:39%;
+	height:25%;
+	position:absolute;
+	float:left;
+	left:29%;
+	background-color:#012355;
+	padding:1%;
+	top:50%;
+
+}
+
+#footer{
+	
+	background-color:#cffccf;
+	height:5%;
+	width:99%;
+	
+	position:absolute;
+	float:bottom;
+	top:93%;
+	right:1%;
+
+}
+#canvas{
+	width:50%;
+	height:100%;
+	background-image:url();
+
+
+}
+#canvas2{
+	width:100%;
+	height:100%;
+	background-color:#550055;
+	border-color:#ffffff;
+
+
+}
+#canvas3{
+	width:100%;
+	height:100%;
+	background-image:url();
+
+
+}

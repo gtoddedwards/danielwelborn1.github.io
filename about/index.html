@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" href="img/gcl.png" type="image/x-icon">
+	<title>GAMECLOUD.LINK</title>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<script type="text/javascript" src="js/FrameTimer.js"></script>
+    <script type="text/javascript" src="js/SpriteSheet.js"></script>
+    <script type="text/javascript" src="js/Animation.js"></script>
+	 <script type="text/javascript">
+	
+	
+        window.onload = function() {
+            var timer = new FrameTimer();
+            timer.tick();
+ 
+            var sprites = new SpriteSheet({
+                width: 45.6,
+                height: 38,
+                sprites: [
+                    { name: 'a' },
+					{ name: 'b' },
+					{ name: 'c' },
+					{ name: 'd' },
+					{ name: 'e' },
+					
+                    
+                ]
+            });
+            var ctx = document.getElementById('canvas').getContext('2d');
+            var walk = new Animation([
+                    { sprite: 'a', time: 0.03 },
+                    { sprite: 'b', time: 0.05 },
+                    { sprite: 'c', time: 0.13 },
+					{ sprite: 'd', time: 0.04 },
+					{ sprite: 'c', time: 0.07 },
+					{ sprite: 'a', time: 0.03 },
+					{ sprite: 'b', time: 0.07 },
+					{ sprite: 'a', time: 0.005 },
+					{ sprite: 'c', time: 0.01 },
+                   
+            ], sprites);
+            var kunioImage = new Image();
+ 
+            kunioImage.onload = function() {
+                setInterval(function(){
+                    walk.animate(timer.getSeconds());
+                    var frame = walk.getSprite();
+                    ctx.clearRect(0, 0, 300, 300);
+                    ctx.drawImage(kunioImage, frame.x, frame.y, 44, 44, 0, 0, 44, 44);
+                    timer.tick();
+                }, 5);
+            };
+ 
+            kunioImage.src = 'img/back_eye.gif';
+        };
+    </script>
+	</head>
+	
+	<body id="body">
+	<header id= "header"><div id="clockStyle" align="center"></div>	
+	<script type="text/javaScript" language="javaScript">
+	
+		function renderTime(){
+			var currentTime = new Date();
+			var diem = "AM";
+			var h = currentTime.getHours();
+			var m = currentTime.getMinutes();
+			var s = currentTime.getSeconds();
+			
+			if (h == 0){
+				h = 12;
+			} else if (h > 12){
+				h = h - 12;
+				diem = "PM";
+			}
+			if(m < 10){
+				m = "0" + m;
+			}
+			if(s < 10){
+				s = "0" + s;
+			}
+			var clock = document.getElementById('clockStyle');
+			clock.textContent= h + ":" + m + ":" + s + ""+ diem;
+			clock.textinnerText= h + ":" + m + ":" + s + ""+ diem;
+			setTimeout('renderTime()',10);
+	 
+	 
+	 }
+	 renderTime();
+</script>
+
+	</header>
+	
+	<div id="pane-sets">
+	
+	<div id= "left-pane-set"><canvas id="canvas3" width="100%" height="100%" style="border:1px solid #ffffff;" >
+		
+	</canvas></br></div>
+	
+	<div id="center-pane-set" align="center"><canvas id="canvas" width="100%" height="100%" style="border:1px solid #ffffff;" >
+		
+	</canvas></br></div>
+	<div id="right-pane-set"><canvas id="canvas3" width="100%" height="100%" style="border:1px solid #ffffff;" >
+		
+	</canvas></br></div>
+	<div id="center-pane-set2">
+		
+	
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<footer id="footer"><canvas id="canvas2" width="100%" height="100%" style="border:1px solid #000000;" >
+		
+		
+	</canvas></br></footer>
+	</body>
+
+
+
+
+</html>
