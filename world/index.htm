@@ -19,13 +19,16 @@ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-6
 }
 
 div#minimapcontainer {
+background-color: #b0c4de;
 
 }
 canvas#minimap {
  position : absolute;
+ 
 }
 canvas#minimapobjects {
  position : absolute;
+ 
 }
 
 div#floor {
@@ -33,7 +36,7 @@ div#floor {
  width : 100%;
  height : 100%;
  background-image: url("images/metal.png");
- background-color : rgb(128,128,128);
+ background-color: #b0c4de;
 }
 
 div#ceiling {
@@ -41,7 +44,7 @@ div#ceiling {
  width : 100%;
  height : 50%;
  background-image: url("images/blue-water.png");
- background-color : rgb(96,96,96);
+ background-color: #b0c4de;
 }
 
 
@@ -552,7 +555,7 @@ function drawMiniMap() {
 
 	var ctx = miniMap.getContext("2d");
 
-	ctx.fillStyle = "white";
+	ctx.fillStyle = "black";
 	ctx.fillRect(0,0,miniMap.width,miniMap.height);
 
 	// loop through all blocks on the map
